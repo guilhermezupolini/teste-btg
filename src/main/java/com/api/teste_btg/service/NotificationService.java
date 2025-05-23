@@ -10,7 +10,7 @@ public class NotificationService {
     @Autowired
     private NotificationClient notificationClient;
 
-    public String sendNotification() {
-        return notificationClient.sendNotification();
+    public void sendNotification() {
+        notificationClient.sendNotification();
     }
 }
