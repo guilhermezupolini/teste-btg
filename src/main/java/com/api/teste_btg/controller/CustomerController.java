@@ -2,6 +2,7 @@ package com.api.teste_btg.controller;
 
 import com.api.teste_btg.controller.request.CustomerCreateRequest;
 import com.api.teste_btg.usecase.CreateCustomerUseCase;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,7 +18,7 @@ public class CustomerController {
     private CreateCustomerUseCase createCustomerUseCase;
 
     @PostMapping
-    public ResponseEntity<String> create(@RequestBody CustomerCreateRequest request) {
+    public ResponseEntity<String> create(@RequestBody @Valid CustomerCreateRequest request) {
         createCustomerUseCase.create(request);
 
         return ResponseEntity.ok("Cliente cadastrado com sucesso");
