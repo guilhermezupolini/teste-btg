@@ -1,6 +1,6 @@
 package com.api.teste_btg.usecase;
 
-import com.api.teste_btg.controller.request.CustomerCreateRequest;
+import com.api.teste_btg.dto.request.CustomerCreateRequest;
 import com.api.teste_btg.domain.Customer;
 import com.api.teste_btg.domain.enums.CustomerStatus;
 import com.api.teste_btg.domain.enums.ReceitaStatus;

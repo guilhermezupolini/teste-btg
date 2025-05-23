@@ -1,6 +1,6 @@
 package com.api.teste_btg.controller;
 
-import com.api.teste_btg.controller.request.CustomerCreateRequest;
+import com.api.teste_btg.dto.request.CustomerCreateRequest;
 import com.api.teste_btg.usecase.CreateCustomerUseCase;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
